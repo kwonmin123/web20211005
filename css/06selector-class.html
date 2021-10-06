@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+    <style>
+        .blinking{ -webkit-animation:blink 0.5s ease-in-out infinite alternate; -moz-animation:blink 0.5s ease-in-out infinite alternate; animation:blink 0.5s ease-in-out infinite alternate; }
+         @-webkit-keyframes blink{ 0% {opacity:0;} 100% {opacity:1;} }
+          @-moz-keyframes blink{ 0% {opacity:0;} 100% {opacity:1;} } 
+        @keyframes blink{ 0% {opacity:0;} 100% {opacity:1;} }
+
+
+        .memo{
+            background-color: yellow;
+        }
+        .memo{text-align: center;}
+        .error{
+            font-style: italic;
+        }
+    </style>
+</head>
+<body>
+<h1 class="memo">class 속성(attribute)</h1>
+<p class="blinking error">class 속성은 하나의 요소가 여러 값을 가질 수 있음</p>
+
+</body>
+</html>
