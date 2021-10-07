@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+    <style>
+        h1.note {
+            color: blue;
+        }
+        .error {
+            color: red;
+        }
+        #head1 {
+            color: gold;
+        }
+    </style>
+</head>
+<body>
+    <h1>선택자 우선순위</h1>
+    <p>id 선택자가 많을 수록 높음</p>
+    <p>id 선택자 수가 같으면 class 선택자가 많을 수록 높음</p>
+    <p>class 선택자 수가 같으면 element 선택자가 많을 수록 높음</p>
+    <p>단, style attribute로 작성된 것이 가장 높음</p>
+    <!-- h1*3>lorem3 -->
+    <h1 class="error">Lorem, ipsum dolor.</h1>
+    <h1 class="error note">Lorem, ipsum dolor.</h1>
+    <h1 class="error note" style="color: yellow;">Nihil, quibusdam distinctio.</h1>
+    <h1 class="note" id="head1">Earum, molestias animi!</h1>
+</body>
+</html>
