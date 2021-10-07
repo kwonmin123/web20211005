@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>margin</title>
+    <style>
+        .container {
+            border: 5px solid red;
+        }
+        .item {
+            border: 5px solid blue;
+            width: 200px;
+            height: 50px;
+        }
+        #div1 {
+            margin: 5px;
+        }
+        #div2 {
+            margin-top: 10px;
+            margin-bottom: 20px;
+            margin-right: 30px;
+            margin-left: 40px;
+        }
+        #div3 {
+            margin: 10px 30px 20px 40px;
+            /* 상 우 하 좌 */
+        }
+        #div4 {
+            margin: 10px 30px 20px;
+            /* 상 좌우 하 */
+        }
+        #div5 {
+            margin: 30px 20px;
+            /* 상하 좌우 */
+        }
+
+        #div6 {
+            margin: auto;
+        }
+
+        #div7 {
+            margin: 50px;
+        }
+
+        #div8 {
+            margin: 30px;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- .container>.item#div$*5{$} -->
+    <div class="container">
+        <div class="item" id="div1">1</div>
+        <div class="item" id="div2">2</div>
+        <div class="item" id="div3">3</div>
+        <div class="item" id="div4">4</div>
+        <div class="item" id="div5">5</div>
+    </div>
+
+    <hr>
+
+    <h1>block 요소 가운데 배치</h1>
+    <!-- .container>.item#div6{center} -->
+    <div class="container">
+        <div class="item" id="div6">center</div>
+    </div>
+
+    <hr>
+
+    <h1>위 아래 margin은 겹쳐진다.</h1>
+    <!-- .container>.item*2#div$@7{$@7} -->
+    <div class="container">
+        <div class="item" id="div7">7</div>
+        <div class="item" id="div8">8</div>
+    </div>
+</body>
+</html>
