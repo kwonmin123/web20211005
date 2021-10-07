@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>padding</title>
+    <style>
+        .container {
+            border: 5px solid blue;
+            margin: 10px;
+        }
+        .item {
+            border: 5px solid red;
+        }
+        #con1 {
+            padding: 10px;
+        }
+        #con2 {
+            padding-top: 10px;
+            padding-right: 20px;
+            padding-bottom: 30px;
+            padding-left: 40px;
+        }
+        #con3 {
+            padding: 10px 20px 30px 40px;
+            /* 상 우 하 좌 */
+        }
+        #con4 {
+            padding: 10px 20px 30px;
+            /* 상 좌우 하 */
+        }
+
+        #con5 {
+            padding: 10px 20px;
+            /* 상하 좌우 */
+        }
+    </style>
+</head>
+<body>
+    <!-- .container#con$*5>.item{$} -->
+    <div class="container" id="con1">
+        <div class="item">1</div>
+    </div>
+    <div class="container" id="con2">
+        <div class="item">2</div>
+    </div>
+    <div class="container" id="con3">
+        <div class="item">3</div>
+    </div>
+    <div class="container" id="con4">
+        <div class="item">4</div>
+    </div>
+    <div class="container" id="con5">
+        <div class="item">5</div>
+    </div>
+</body>
+</html>
