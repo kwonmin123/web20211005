@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link href="../icon/css/all.css" rel="stylesheet"> <!--load all styles -->
+    <title>flexbox 연습</title>
+    <style>
+        .upper{
+            display: flex;
+            justify-content: space-between;
+        }
+           .bar{
+            display: flex;
+            justify-content: space-between;
+            background-color: #222;
+            color: white;
+        }
+        
+
+        .left-menu, .right-menu {
+            display: flex;
+            background-color: #222;
+            color: white;
+        }
+
+        .menu-item {
+            padding: 5px 10px;
+        }
+
+        .menu-item:hover {
+            background-color: seagreen;
+        }
+        .button{
+            background-color: green;
+            color: white;
+            padding: 5px 20px;
+            font: bold;
+            border-radius: 10px;
+        }
+     
+    </style>
+</head>
+<body>
+    <div class="upper">
+        <div class="up-left">
+
+            <a href="https://www.w3schools.com" class="w3-bar-item w3-button w3-hover-none w3-left w3-padding-16" title="Home" style="width:77px">
+               <img src="ABC.PNG" width="20" height="20" alt="">
+              </a>
+              <a class="w3-bar-item w3-button w3-hide-small barex bar-item-hover w3-padding-24" href="" onclick="w3_open_nav('tutorials')" id="navbtn_tutorials" title="Tutorials" style="width:116px" style="color: black;" >Menu <i class="fa fa-caret-down" style="font-size:20px;"></i><i class="fa fa-caret-up" style="display:none"></i></a>
+            
+        </div>
+        <div class="up-right">
+              <div class="button" id="loginactioncontainer" class="w3-right w3-padding-16" style="margin-left:50px">LOGIN</div>
+        </div>
+    </div>
+    <div class="bar">
+
+        
+        <!-- .left-menu>.menu-item*5 -->
+        <div class="left-menu">
+            <div class="menu-item"><i class="fas fa-bars"></i></div>
+            <div class="menu-item"><i class="fas fa-home"></i></div>
+            <div class="menu-item">HTML</div>
+            <div class="menu-item">CSS</div>
+            <div class="menu-item">JAVASCRIPT</div>
+        </div>
+        
+        <!-- .right-menu>.menu-item*3 -->
+        <div class="right-menu">
+            <div class="menu-item"><i class="fas fa-adjust"></i></div>
+            <div class="menu-item"><i class="fas fa-globe-americas"></i></div>
+            <div class="menu-item"><i class="fas fa-search"></i></div>
+        </div>
+        
+    </div>
+    </body>
+    </html>
