@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>flex</title>
+    <style>
+        .container {
+            display: flex;
+            background-color: thistle;
+        }
+        .item:nth-child(1) {
+            background-color: yellowgreen;
+        }
+        .item:nth-child(2) {
+            background-color: tomato;
+        }
+
+        #container1 > .item {
+            flex-grow: 1;
+        }
+
+        #container2 > .item {
+            flex-grow: 1;
+            flex-basis: 0;
+        }
+
+        #container3 > .item {
+            flex: 1;
+        }
+    </style>
+</head>
+<body>
+<!-- .container*3#container$>.item{loooooooooooong}+.item{s} -->
+<div class="container" id="container1">
+    <div class="item">loooooooooooong</div>
+    <div class="item">s</div>
+</div>
+<div class="container" id="container2">
+    <div class="item">loooooooooooong</div>
+    <div class="item">s</div>
+</div>
+<div class="container" id="container3">
+    <div class="item">loooooooooooong</div>
+    <div class="item">s</div>
+</div>
+</body>
+</html>
