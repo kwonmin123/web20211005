@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>flexbox</title>
+    <style>
+        .item {
+            background-color: darkgrey;
+            font-weight: bold;
+            font-size: 32px;
+        }
+        .item:nth-child(2n) {
+            background-color: chocolate;
+        }
+
+        .container {
+            display: flex;
+            background-color: khaki;
+            height: 500px;
+        }
+    </style>
+</head>
+<body>
+    <p>
+        display 속성을 flex로 둔 요소는 flex container <br>
+        flex container의 자식 요소들은 flex item <br>
+        flex items은 flex container의 main축 기준으로 배치됨
+    </p>
+    <!-- .container>.item*5#item${$} -->
+    <div class="container">
+        <div class="item" id="item1">1</div>
+        <div class="item" id="item2">2</div>
+        <div class="item" id="item3">3</div>
+        <div class="item" id="item4">4</div>
+        <div class="item" id="item5">5</div>
+    </div>
+</body>
+</html>
