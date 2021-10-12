@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>center</title>
+    <style>
+        .center {
+            background-color: black;
+            color: white;
+            font-size: 32px;
+            font-weight: bold;
+            text-align: center;
+            padding: 10px;
+            width: 150px;
+        }
+        .container {
+            background-color: thistle;
+            margin-top: 15px;
+            height: 300px;
+        }
+
+        #div1 > .center {
+            margin: auto;
+        }
+
+        #div1 {
+            display: flex;
+        }
+
+        #div2 {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+    </style>
+</head>
+<body>
+    <!-- .container*2#div$>.center[contenteditable=true]{CENTER} -->
+    <div class="container" id="div1">
+        <div class="center" contenteditable="true">CENTER</div>
+    </div>
+    <div class="container" id="div2">
+        <div class="center" contenteditable="true">CENTER</div>
+    </div>
+</body>
+</html>
