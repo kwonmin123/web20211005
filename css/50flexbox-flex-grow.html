@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>flex grow</title>
+    <style>
+        .container {
+            display: flex;
+            background-color: skyblue;
+            margin-top: 15px;
+            height: 300px;
+        }
+        .item {
+            font-size: 40px;
+            text-align: center;
+            font-weight: bold;
+            background-color: tomato;
+        }
+        .item:nth-child(even) {
+            background-color: yellow;
+        }
+
+        #container1 > .item:nth-child(5) {
+            flex-grow: 1; /* 단위 없음 */
+        }
+
+        #container2 > .item:nth-child(4),
+        #container2 > .item:nth-child(5) {
+            flex-grow: 1;
+        }
+
+        #container3 > .item:nth-child(4) {
+            flex-grow: 2;
+        }
+
+        #container3 > .item:nth-child(5) {
+            flex-grow: 1;
+        }
+
+        #container4 > .item:nth-child(3) {
+            flex-grow: 1;
+        }
+    </style>
+</head>
+<body>
+    <p>flex-grow: flex 아이템이 남은 공간을 얼마나 차지할 것인지 정의</p>
+<!-- .container*10#container$>.item*5{$} -->
+<div class="container" id="container1">
+    <div class="item">1</div>
+    <div class="item">2</div>
+    <div class="item">3</div>
+    <div class="item">4</div>
+    <div class="item">5</div>
+</div>
+<div class="container" id="container2">
+    <div class="item">1</div>
+    <div class="item">2</div>
+    <div class="item">3</div>
+    <div class="item">4</div>
+    <div class="item">5</div>
+</div>
+<div class="container" id="container3">
+    <div class="item">1</div>
+    <div class="item">2</div>
+    <div class="item">3</div>
+    <div class="item">4</div>
+    <div class="item">5</div>
+</div>
+<div class="container" id="container4">
+    <div class="item">1</div>
+    <div class="item">2</div>
+    <div class="item">3</div>
+    <div class="item">4</div>
+    <div class="item">5</div>
+</div>
+<div class="container" id="container5">
+    <div class="item">1</div>
+    <div class="item">2</div>
+    <div class="item">3</div>
+    <div class="item">4</div>
+    <div class="item">5</div>
+</div>
+<div class="container" id="container6">
+    <div class="item">1</div>
+    <div class="item">2</div>
+    <div class="item">3</div>
+    <div class="item">4</div>
+    <div class="item">5</div>
+</div>
+<div class="container" id="container7">
+    <div class="item">1</div>
+    <div class="item">2</div>
+    <div class="item">3</div>
+    <div class="item">4</div>
+    <div class="item">5</div>
+</div>
+<div class="container" id="container8">
+    <div class="item">1</div>
+    <div class="item">2</div>
+    <div class="item">3</div>
+    <div class="item">4</div>
+    <div class="item">5</div>
+</div>
+<div class="container" id="container9">
+    <div class="item">1</div>
+    <div class="item">2</div>
+    <div class="item">3</div>
+    <div class="item">4</div>
+    <div class="item">5</div>
+</div>
+<div class="container" id="container10">
+    <div class="item">1</div>
+    <div class="item">2</div>
+    <div class="item">3</div>
+    <div class="item">4</div>
+    <div class="item">5</div>
+</div>
+</body>
+</html>
