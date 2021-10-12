@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>flex basis</title>
+    <style>
+        .container {
+            background-color: thistle;
+            margin-top: 15px;
+            display: flex;
+        }
+        .item {
+            background-color: yellow;
+            flex-grow: 1;
+        }
+        .item:nth-child(even) {
+            background-color: tomato;
+            flex-grow: 1;
+        }
+
+        #container2 > .item {
+            flex-basis: 0;
+        }
+    </style>
+</head>
+<body>
+<!-- .container#container$*2>.item{loooooong}+.item{s} -->
+<div class="container" id="container1">
+    <div class="item">loooooong</div>
+    <div class="item">s</div>
+</div>
+<div class="container" id="container2">
+    <div class="item">loooooong</div>
+    <div class="item">s</div>
+</div>
+</body>
+</html>
