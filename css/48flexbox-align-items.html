@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>align items</title>
+    <style>
+        .container {
+            display: flex;
+            margin-top: 15px;
+            height: 300px;
+            background-color: skyblue;
+            justify-content: space-around;
+        }
+
+        .item {
+            text-align: center;
+            font-size: 32px;
+            font-weight: bold;
+            color: snow;
+            background-color: blue;
+            width: 100px;
+        }
+        .item:nth-child(2n) {
+            background-color: red;
+        }
+
+        #container1 {
+            align-items: stretch;
+        }
+        #container2 {
+            align-items: flex-start;
+        }
+        #container3 {
+            align-items: flex-end;
+        }
+        #container4 {
+            align-items: center;
+        }
+        #container5 {
+            align-items: baseline;
+        }
+        #container5 > .item:first-child {
+            font-size: 64px;
+        }
+    </style>
+</head>
+<body>
+<!-- .container#container$*5>.item[contenteditable=true]*5{$} -->
+<div class="container" id="container1">
+    <div class="item" contenteditable="true">1</div>
+    <div class="item" contenteditable="true">2</div>
+    <div class="item" contenteditable="true">3</div>
+    <div class="item" contenteditable="true">4</div>
+    <div class="item" contenteditable="true">5</div>
+</div>
+<div class="container" id="container2">
+    <div class="item" contenteditable="true">1</div>
+    <div class="item" contenteditable="true">2</div>
+    <div class="item" contenteditable="true">3</div>
+    <div class="item" contenteditable="true">4</div>
+    <div class="item" contenteditable="true">5</div>
+</div>
+<div class="container" id="container3">
+    <div class="item" contenteditable="true">1</div>
+    <div class="item" contenteditable="true">2</div>
+    <div class="item" contenteditable="true">3</div>
+    <div class="item" contenteditable="true">4</div>
+    <div class="item" contenteditable="true">5</div>
+</div>
+<div class="container" id="container4">
+    <div class="item" contenteditable="true">1</div>
+    <div class="item" contenteditable="true">2</div>
+    <div class="item" contenteditable="true">3</div>
+    <div class="item" contenteditable="true">4</div>
+    <div class="item" contenteditable="true">5</div>
+</div>
+<div class="container" id="container5">
+    <div class="item" contenteditable="true">1</div>
+    <div class="item" contenteditable="true">2</div>
+    <div class="item" contenteditable="true">3</div>
+    <div class="item" contenteditable="true">4</div>
+    <div class="item" contenteditable="true">5</div>
+</div>
+</body>
+</html>
