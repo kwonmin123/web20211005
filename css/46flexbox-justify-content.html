@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>justify content</title>
+    <style>
+        .container {
+            display: flex;
+            background-color: gold;
+            height: 300px;
+            margin-top: 10px;
+        }
+
+        .item {
+            background-color: red;
+            color: white;
+            font-size: 40px;
+            font-weight: bold;
+            width: 100px;
+        }
+        .item:nth-child(2n) {
+            background-color: blue;
+        }
+        #container1 {
+            justify-content: flex-start;
+        }
+        #container2 {
+            justify-content: flex-end;
+        }
+        #container3 {
+            justify-content: center;
+        }
+        #container4 {
+            justify-content: space-between;
+        }
+        #container5 {
+            justify-content: space-around;
+        }
+        #container6 {
+            justify-content: space-evenly;
+        }
+    </style>
+</head>
+<body>
+    <p>justify-content 속성은 메인축 기준으로 
+        아이템을 배치하는 방법을 정의함
+    </p>
+<!-- .container*6#container$>.item*5{$} -->
+<div class="container" id="container1">
+    <div class="item">1</div>
+    <div class="item">2</div>
+    <div class="item">3</div>
+    <div class="item">4</div>
+    <div class="item">5</div>
+</div>
+<div class="container" id="container2">
+    <div class="item">1</div>
+    <div class="item">2</div>
+    <div class="item">3</div>
+    <div class="item">4</div>
+    <div class="item">5</div>
+</div>
+<div class="container" id="container3">
+    <div class="item">1</div>
+    <div class="item">2</div>
+    <div class="item">3</div>
+    <div class="item">4</div>
+    <div class="item">5</div>
+</div>
+<div class="container" id="container4">
+    <div class="item">1</div>
+    <div class="item">2</div>
+    <div class="item">3</div>
+    <div class="item">4</div>
+    <div class="item">5</div>
+</div>
+<div class="container" id="container5">
+    <div class="item">1</div>
+    <div class="item">2</div>
+    <div class="item">3</div>
+    <div class="item">4</div>
+    <div class="item">5</div>
+</div>
+<div class="container" id="container6">
+    <div class="item">1</div>
+    <div class="item">2</div>
+    <div class="item">3</div>
+    <div class="item">4</div>
+    <div class="item">5</div>
+</div>
+</body>
+</html>
