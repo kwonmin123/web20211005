@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="../icon/css/all.css">
+    <title>javascript</title>
+    <style>
+        
+    </style>
+</head>
+<body>
+
+    <!-- #icon>i.far.fa-heart -->
+    <div id="icon"><i class="far fa-heart"></i></div>
+
+    <!-- 자바스크립트는 script 요소 안에 작성 -->
+    <script>
+        document.querySelector("#icon i").onclick = function() {
+            // this.classList.remove("far");
+            // this.classList.add("fas");
+            this.classList.toggle("far");
+            this.classList.toggle("fas");
+        };
+
+    </script>
+</body>
+</html>
