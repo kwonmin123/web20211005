@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link href="../icon/css/all.css" rel="stylesheet"> <!--load all styles -->
+    <title>flexbox 연습</title>
+    <style>
+        .menu-container {
+            display: flex;
+            justify-content: space-between;
+            background-color: #222;
+            color: white;
+        }
+
+        .left-menu, .right-menu {
+            display: flex;
+        }
+
+        .menu-item {
+            padding: 5px 10px;
+        }
+
+        .menu-item:hover {
+            background-color: seagreen;
+        }
+
+        .top-container {
+            display: flex;
+            height: 42px;
+            align-items: center;
+            justify-content: space-between;
+            margin-bottom: 7px;
+        }
+        .button {
+            padding: 3px 10px;
+            color: white;
+            background-color: seagreen;
+            border-radius: 10px;
+        }
+        .top-container > .left-menu > div {
+            margin-right: 10px;
+        }
+        .logo {
+            font-size: 40px;
+            color: red;
+        }
+        .top-container > .left-menu {
+            align-items: center;
+        }
+
+        .main-container {
+            display: flex;
+            margin-top: 7px;
+        }
+
+        .side-menu, .ad-container {
+            width: 200px;
+            background-color: silver;
+        }
+
+        .side-menu-item {
+            padding-left: 15px;
+            padding-top: 10px;
+            padding-bottom: 10px;
+        }
+
+        .side-menu-item:hover {
+            color: white;
+            background-color: seagreen;
+        }
+
+        .main-content {
+            flex: 1;
+            margin: 0px 5px;
+        }
+
+        .sticky-menu {
+            position: sticky;
+            top: 0px;
+        }
+    </style>
+</head>
+<body>
+<!-- .top-container>.left-menu+.right-menu -->
+<div class="top-container">
+    <div class="left-menu">
+        <!-- div{image}+div{Menu} -->
+        <div class="logo"><i class="fab fa-apple"></i></div>
+        <div>Menu <i class="fas fa-caret-down"></i></div>
+    </div>
+    <div class="right-menu">
+        <div class="button">Log In</div>
+    </div>
+</div>
+<div class="menu-container sticky-menu">
+    <!-- .left-menu>.menu-item*5 -->
+    <div class="left-menu">
+        <div class="menu-item"><i class="fas fa-bars"></i></div>
+        <div class="menu-item"><i class="fas fa-home"></i></div>
+        <div class="menu-item">HTML</div>
+        <div class="menu-item">CSS</div>
+        <div class="menu-item">JAVASCRIPT</div>
+    </div>
+    
+    <!-- .right-menu>.menu-item*3 -->
+    <div class="right-menu">
+        <div class="menu-item"><i class="fas fa-adjust"></i></div>
+        <div class="menu-item"><i class="fas fa-globe-americas"></i></div>
+        <div class="menu-item"><i class="fas fa-search"></i></div>
+    </div>
+</div>
+
+
+<!-- .main-container>.side-menu+.main-content+.ad-container -->
+<div class="main-container">
+    <div class="side-menu">
+        <!-- .side-menu-item*20>lorem1 -->
+        <div class="side-menu-item">Lorem.</div>
+        <div class="side-menu-item">Tenetur!</div>
+        <div class="side-menu-item">Minima.</div>
+        <div class="side-menu-item">Aliquam.</div>
+        <div class="side-menu-item">Consequuntur!</div>
+        <div class="side-menu-item">Quaerat.</div>
+        <div class="side-menu-item">Eligendi?</div>
+        <div class="side-menu-item">Necessitatibus?</div>
+        <div class="side-menu-item">Dolores.</div>
+        <div class="side-menu-item">Perferendis.</div>
+        <div class="side-menu-item">Incidunt.</div>
+        <div class="side-menu-item">Rem.</div>
+        <div class="side-menu-item">Earum!</div>
+        <div class="side-menu-item">Eligendi?</div>
+        <div class="side-menu-item">Accusamus.</div>
+        <div class="side-menu-item">Rerum.</div>
+        <div class="side-menu-item">Corporis.</div>
+        <div class="side-menu-item">Corrupti.</div>
+        <div class="side-menu-item">At.</div>
+        <div class="side-menu-item">Exercitationem!</div>
+    </div>
+    <div class="main-content">
+        <!-- (h1>lorem3^p>lorem)*10 -->
+        <h1>Lorem, ipsum dolor.</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum iusto, impedit rem magni eaque ipsam inventore vitae iure repellat nam dolor tempore accusamus aspernatur, quidem culpa ipsa, illum provident mollitia.</p>
+        <h1>Enim, obcaecati perferendis?</h1>
+        <p>Repudiandae dolores ex, consequatur modi velit libero corporis obcaecati facere numquam neque a saepe beatae asperiores itaque hic ipsam illum aliquid debitis quia deserunt? A repudiandae magnam vitae doloremque ipsam.</p>
+        <h1>Quia, culpa necessitatibus?</h1>
+        <p>Cupiditate maxime nulla sit quaerat est pariatur ut! Ex at accusantium minima perferendis earum, dignissimos doloribus harum, iste ab ullam atque a nam repudiandae, eius quis deserunt sint. Autem, itaque!</p>
+        <h1>Blanditiis, dolore voluptate!</h1>
+        <p>Asperiores magnam perferendis odio modi nesciunt libero commodi ab, nobis blanditiis quae officia quam dolores quas. Deleniti doloribus dolor harum voluptatem, quia in at, facilis, reiciendis minima quos tenetur fugit?</p>
+        <h1>Commodi, rem impedit.</h1>
+        <p>Ipsum enim optio, vitae placeat ab animi debitis, impedit quisquam exercitationem at eveniet laboriosam veniam quidem fugit? Ducimus similique, impedit repellendus sunt repudiandae accusantium in quo deserunt ipsum esse molestiae!</p>
+        <h1>Natus, quos dolorum.</h1>
+        <p>Cumque quos rerum eveniet. Labore tempore fuga deleniti sed? Doloremque modi minus sit laboriosam quisquam ullam dolor deserunt praesentium ipsa, distinctio iusto animi quas aut repudiandae accusantium ut. Praesentium, nam.</p>
+        <h1>Nulla, ad nihil.</h1>
+        <p>Consequuntur repellendus non reprehenderit sint iusto nesciunt iure aspernatur excepturi corporis placeat soluta repudiandae quasi illo eligendi, quaerat recusandae fugit ex! Eligendi hic quae blanditiis sint porro dolores voluptatibus cum!</p>
+        <h1>Consequatur, odit eum!</h1>
+        <p>Debitis maxime facilis veniam dolore deleniti quos asperiores voluptatem inventore velit repellendus distinctio sunt, ratione libero, totam non obcaecati. Fugiat pariatur debitis sunt officia ducimus? Quidem quod doloribus obcaecati maiores!</p>
+        <h1>Consequuntur, similique aperiam?</h1>
+        <p>Delectus quisquam id et nisi molestias dolorem ad placeat explicabo, saepe culpa repudiandae tempore minus sed sit, distinctio minima? Maxime sed aperiam at sunt quasi quidem sint magni, vitae tempore.</p>
+        <h1>Quasi, doloribus aspernatur?</h1>
+        <p>Eius impedit sunt ea mollitia, itaque aut. Culpa rem illum corporis alias ipsam consequatur deserunt pariatur voluptatibus nesciunt sit ab dolorem, sint, similique eaque aut expedita perferendis neque corrupti repellendus!</p>
+
+    </div>
+    <div class="ad-container"></div>
+</div>
+</body>
+</html>
