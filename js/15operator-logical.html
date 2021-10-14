@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="../icon/css/all.css">
+    <title></title>
+    <style>
+        
+    </style>
+</head>
+<body>
+
+<script>
+console.log("and "); // 양변이 true일 때만 true, 나머지 false
+console.log(true && true); // true
+console.log(true && false); // false
+console.log(false && true); // false
+console.log(false && false); // false
+
+console.log("or "); // 양변이 false일 때만 false, 나머지 true
+console.log(true || true); // true
+console.log(true || false); // true
+console.log(false || true); // true
+console.log(false || false); // false
+
+console.log("not ");
+console.log(!true);// false
+console.log(!false);// true
+
+console.log("example ");
+let x = 6;
+let y = 3;
+
+let r1 = (x < 10) && (y > 1); // true
+console.log(r1);
+
+let r2 = (x == 5) || (y == 5); // false
+console.log(r2);
+
+let r3 = !(x == y); // true
+console.log(r3);
+
+</script>
+</body>
+</html>
