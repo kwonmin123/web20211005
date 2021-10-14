@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="../icon/css/all.css">
+    <title>type conversion : string to number</title>
+    <style>
+        
+    </style>
+</head>
+<body>
+
+<script>
+let a = "12";
+let b = 2;
+let c = "2";
+
+console.log(a);
+console.log(b);
+
+console.log(a < b); // false
+console.log(a < c); // true
+
+// string to number
+console.log("Number 함수");
+let d = Number(a); // number 12
+let e = Number(c); // number 2
+console.log(d < e); // false
+
+console.log("parseInt 함수");
+let f = parseInt("3");
+console.log(f);
+let g = parseInt("3.14");
+console.log(g);
+
+console.log("parseFloat 함수");
+let h = parseFloat("3.14");
+console.log(h);
+
+// string concat
+let i = "3";
+let j = "4";
+
+console.log(i + j); // 연결연산
+console.log(Number(i) + Number(j)); // 산술연산
+</script>
+</body>
+</html>
