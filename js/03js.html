@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="../icon/css/all.css">
+    <title>absolute, drop down menu</title>
+    <style>
+        .main-menu {
+            display: flex;
+            background-color: #333;
+            font-size: 16px;
+            color: white;
+        }
+
+        .main-menu-item {
+            padding: 14px;
+            position: relative;
+        }
+
+        .main-menu-item:hover {
+            background-color: red;
+        }
+
+        .drop-down-menu {
+            /* display: none; */
+            position: absolute;
+            background-color: white;
+            color: black;
+            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+            left: 0px;
+            top: 50px;
+            padding: 14px;
+            width: 80px;
+
+        }
+
+        .d-none {
+            display: none;
+        }
+
+        /* .main-menu-item:hover .drop-down-menu {
+            display: block;
+        } */
+    </style>
+</head>
+<body>
+<!-- .main-menu>.main-menu-item*3{Home} -->
+<div class="main-menu">
+    <div class="main-menu-item">Home</div>
+    <div class="main-menu-item">News</div>
+    <div id="menu1" class="main-menu-item">
+        Dropdown <i class="fas fa-caret-down"></i>
+        <!-- .drop-down-menu>.drop-down-menu-item*3{Link $} -->
+        <div class="drop-down-menu d-none">
+            <div class="drop-down-menu-item">Link 1</div>
+            <div class="drop-down-menu-item">Link 2</div>
+            <div class="drop-down-menu-item">Link 3</div>
+        </div>
+    </div>
+</div>
+
+<!-- h1>lorem3 -->
+<h1>Lorem, ipsum dolor.</h1>
+
+<script>
+    document.querySelector("#menu1").onclick = function() {
+        document.querySelector("#menu1 .drop-down-menu").classList.toggle("d-none");
+    }
+</script>
+</body>
+</html>
