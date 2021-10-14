@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="../icon/css/all.css">
+    <title>position absolute</title>
+    <style>
+        .item {
+            border : 2px solid navy;
+            font-size: 24px;
+            margin-top: 200px;
+            width: 500px;
+            padding-right: 70px;
+
+            position: relative;
+        }
+        .close {
+            padding: 14px;
+            border-radius: 50%;
+            background-color: black;
+            color: white;
+            text-align: center;
+            box-sizing: border-box;
+            width: 60px;
+            height: 60px;
+
+            position: absolute;
+            right: 35px;
+            top: -30px;
+        }
+    </style>
+</head>
+<body>
+<!-- .item>lorem10+.close>i.fas.fa-times -->
+<div class="item">
+    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ex, quasi!
+    <div class="close"><i class="fas fa-times"></i></div>
+</div>
+
+<script>
+    document.querySelector(".close").addEventListener("click", function() {
+        document.querySelector(".item").remove();
+    });
+</script>
+</body>
+</html>
