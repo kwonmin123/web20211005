@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="../icon/css/all.css">
+    <title>dom get element</title>
+    <style>
+        
+    </style>
+</head>
+<body>
+<!-- h1*5.my-head#head$>lorem1 -->
+<h1 class="my-head" id="head1">Lorem.</h1>
+<h1 class="my-head" id="head2">Aliquam?</h1>
+<h1 class="my-head" id="head3">Praesentium!</h1>
+<h1 class="my-head" id="head4">Quia.</h1>
+<h1 class="my-head" id="head5">Officiis.</h1>
+
+<script>
+// getElementById() : id 값으로 하나의 요소 리턴
+let h1 = document.getElementById("head1");
+console.log(h1.innerHTML);
+
+// getElementsByClassName() : class 값으로 여러 요소 리턴
+let heads = document.getElementsByClassName("my-head");
+console.log(heads[0].innerHTML);
+console.log(heads[1].innerHTML);
+console.log(heads.length);
+
+// querySelector() : css 선택자로 하나의 요소 리턴
+let h2 = document.querySelector("#head2");
+console.log(h2.innerHTML);
+
+let h5 = document.querySelector("#head5");
+console.log(h5.innerHTML);
+
+// querySelector() : css 선택자가 여러 요소를 선택할 경우 첫번째 요소만 리턴
+let h6 = document.querySelector("h1");
+console.log(h6.innerHTML);
+
+// querySelectorAll() : css선택자로 여러 요소 리턴
+let heads2 = document.querySelectorAll("h1");
+console.log(heads2.length);
+console.log(heads2[0].innerHTML);
+
+let heads3 = document.querySelectorAll(".my-head");
+console.log(heads3[4].innerHTML);
+</script>
+</body>
+</html>
