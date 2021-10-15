@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="../icon/css/all.css">
+    <title>random</title>
+    <style>
+        
+    </style>
+</head>
+<body>
+<!-- input*2#input$+br+button -->
+<input type="text" id="input1" value="1">
+<input type="text" id="input2" value="5">
+<br>
+<button onclick="showRandom();">랜덤값 출력</button>
+<script>
+function showRandom() {
+    let v1 = Number(document.querySelector("#input1").value);
+    let v2 = Number(document.querySelector("#input2").value);
+
+    let r = genRandom(v1, v2);
+    console.log(r);
+}
+function genRandom(a1,a2) {
+ return  parseInt(Math.random()*(Math.abs(a1-a2)+1)+Math.min(a1,a2));
+}
+</script>
+</body>
+</html>
