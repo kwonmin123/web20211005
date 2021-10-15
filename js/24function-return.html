@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="../icon/css/all.css">
+    <title>return</title>
+    <style>
+        
+    </style>
+</head>
+<body>
+
+<script>
+// return : 
+// 1. 메소드 종료
+// 2. 오른쪽에 있는 값 반환(return)
+
+function func1() {
+    console.log(1, "func1 실행됨");
+    console.log(2, "func1 실행중");
+    return;
+    console.log(3, "func1 실행중");
+    
+}
+
+func1();
+console.log("코드 실행중.....");
+
+function func2() {
+    console.log(1, "func2 실행됨");
+    return 3;
+    console.log(2, "func2 실행중");
+}
+
+let a = func2();
+console.log("코드 실행중!!!!!!");
+console.log(a);
+
+console.log(func2());
+
+</script>
+</body>
+</html>
