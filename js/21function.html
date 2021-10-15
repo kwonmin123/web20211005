@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="../icon/css/all.css">
+    <title>function</title>
+    <style>
+        
+    </style>
+</head>
+<body>
+<!-- input*2#input$+button -->
+<input type="text" id="input1">
+<input type="text" id="input2">
+<button onclick="show();">값 출력</button>
+<button onclick="add();"><i class="fas fa-plus"></i></button>
+<!-- button*3>i.fas.fa-plus -->
+<button onclick="subtract();"><i class="fas fa-minus"></i></button>
+<button onclick="times();"><i class="fas fa-times"></i></button>
+<button onclick="divide();"><i class="fas fa-divide"></i></button>
+
+<script>
+function divide() {
+    let v1 = document.querySelector("#input1").value;
+    let v2 = document.querySelector("#input2").value;
+
+    console.log(Number(v1) / Number(v2));
+}
+
+function times() {
+    let v1 = document.querySelector("#input1").value;
+    let v2 = document.querySelector("#input2").value;
+
+    console.log(Number(v1) * Number(v2));
+}
+
+function subtract() {
+    let v1 = document.querySelector("#input1").value;
+    let v2 = document.querySelector("#input2").value;
+
+    console.log(Number(v1) - Number(v2));
+}
+
+function show() {
+    let v1 = document.querySelector("#input1").value;
+    let v2 = document.querySelector("#input2").value;
+
+    console.log(v1);
+    console.log(v2);
+}
+
+function add() {
+    let v1 = document.querySelector("#input1").value;
+    let v2 = document.querySelector("#input2").value;
+
+    console.log(Number(v1) + Number(v2));
+}
+</script>
+</body>
+</html>
