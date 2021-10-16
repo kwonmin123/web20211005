@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="../icon/css/all.css">
+    <title></title>
+    <style>
+        
+    </style>
+</head>
+<body>
+    <!-- button{가위 바위 보} -->
+    <!-- <button onclick="rps();">가위 바위 보</button> -->
+
+    <!-- button[onclick]*3 -->
+    <button onclick="rps(0);">가위</button>
+    <button onclick="rps(1);">바위</button>
+    <button onclick="rps(2);">보</button>
+
+    <!-- div>span>i.fas -->
+    <div>
+        <span>
+            <i class="fas"></i>
+        </span>
+    </div>
+
+    <div><h1>경기 결과</h1></div>
+
+<script>
+    function rps(user) {
+        let r = Math.random();
+        // console.log(r);
+        r = parseInt(r * 3);
+        // console.log(r);
+        
+        let icon = document.querySelector("i");
+        icon.classList.remove("fa-hand-rock", "fa-hand-paper", "fa-hand-scissors");
+        if (r == 0) {
+            // console.log("가위");
+            icon.classList.add("fa-hand-scissors");
+        } else if (r == 1) {
+            // console.log("바위");    
+            icon.classList.add("fa-hand-rock");
+        } else {
+            // console.log("보");
+            icon.classList.add("fa-hand-paper");
+        }
+        let msg= "";
+        if(user==r){
+            msg+="비겼습니다";
+        } else if(user%3==(r+1)%3) {
+            msg+="이겼습니다";
+        } else msg+="졌습니다";
+        document.querySelector("h1").innerHTML = msg;
+
+
+
+    //     if(user==r)document.querySelector("h1").innerHTML ="경기결과 :비김";
+        
+    //     if(user==2){if(r==0)document.querySelector("h1").innerHTML ="경기결과 :패";
+    // else document.querySelector("h1").innerHTML ="경기결과 :승";}    
+    //     else {if(user>r){document.querySelector("h1").innerHTML ="경기결과 :승";}
+    //     else document.querySelector("h1").innerHTML ="경기결과 :패";}
+    
+    }
+
+    function result(p) {
+        if(p==0){
+
+            if(r==0) 
+            if(r==1) document.querySelector("h1").innerHTML ="경기결과 :패";
+            if(r==2) document.querySelector("h1").innerHTML ="경기결과 :승";
+        }
+
+    }
+
+</script>
+</body>
+</html>
