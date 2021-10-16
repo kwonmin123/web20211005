@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="../icon/css/all.css">
+    <title></title>
+    <style>
+        
+    </style>
+</head>
+<body>
+    <!-- button{가위 바위 보} -->
+    <button onclick="rps();">가위 바위 보</button>
+    <!-- div>span>i.fas -->
+    <div>
+        <span>
+            <i class="fas"></i>
+        </span>
+    </div>
+
+<script>
+    function rps() {
+        let r = Math.random();
+        // console.log(r);
+        r = parseInt(r * 3);
+        // console.log(r);
+        
+        let icon = document.querySelector("i");
+        // icon.classList.remove("fa-hand-rock", "fa-hand-paper", "fa-hand-scissors");
+        if (r == 0) {
+            // console.log("바위");
+            icon.className ="far fa-hand-rock";
+            console.log("바위");
+        } else if (r == 1) {
+            // console.log("가위");    
+            icon.className ="far fa-hand-papaer";
+            console.log("가위");
+        } else {
+            // console.log("보");
+            icon.className ="far fa-hand-scissors";
+            console.log("보");
+        }
+    }
+</script>
+</body>
+</html>
