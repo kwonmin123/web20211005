@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="../icon/css/all.css">
+    <title>classList</title>
+    <style>
+        
+    </style>
+</head>
+<body>
+<i class="fas fa-cat"></i>
+<i class="fas fa-dog"></i>
+<i class="fas fa-dove"></i>
+<i class="fas fa-dragon"></i>
+<i></i>
+
+<script>
+    let icons = document.querySelectorAll("i");
+
+    // class 정보 얻기
+    console.log(icons[0].classList.value);
+    console.log(icons[1].classList.value);
+
+    // class 추가
+    icons[4].classList.add("fas", "fa-fish");
+    icons[0].classList.add("fa-3x");
+    icons[1].classList.add("fa-3x");
+
+    // class 삭제
+    icons[1].classList.remove("fa-3x");
+    icons[4].classList.remove("fas", "fa-fish");
+
+</script>
+</body>
+</html>
