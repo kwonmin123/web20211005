@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="../icon/css/all.css">
+    <title>dom </title>
+    <style>
+        
+    </style>
+</head>
+<body>
+<!-- button{변경}+p#result{hello javascript} -->
+<button onclick="change();">변경</button>
+<p id="result">hello javascript</p>
+<script>
+function change() {
+    // id가 result 요소의 content "헬로 자바스크립트"
+    document.querySelector("#result").innerHTML = "헬로 자바스크립트";
+}
+</script>
+</body>
+</html>
