@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="../icon/css/all.css">
+    <title>value</title>
+    <style>
+        
+    </style>
+</head>
+<body>
+<!-- input#input1+button{출력}+p#result -->
+<input type="text" id="input1">
+<button onclick="showValue();">출력</button>
+<p id="result"></p>
+
+<script>
+function showValue() {
+    let val = document.querySelector("#input1").value;
+    document.querySelector("#result").innerHTML = val;
+}
+</script>
+</body>
+</html>
