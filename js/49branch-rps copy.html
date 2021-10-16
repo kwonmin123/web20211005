@@ -34,6 +34,8 @@
 
         // user와 r이 같으면 비김
         let result;
+
+
         if (user == r) {
             result = "비겼습니다";
         } else if (user == 0 && r == 2) {
@@ -47,6 +49,7 @@
         //h1 요소에 set
         document.querySelector("h1").innerHTML = result;
 
+       
         let icon = document.querySelector("i");
         icon.classList.remove("fa-hand-rock", "fa-hand-paper", "fa-hand-scissors");
         if (r == 0) {
