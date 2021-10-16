@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="../icon/css/all.css">
+    <title>class</title>
+    <style>
+        
+    </style>
+</head>
+<body>
+<!-- button*3{가위} -->
+<button onclick="changeHand('fa-hand-scissors');">가위</button>
+<button onclick="changeHand('fa-hand-rock');">바위</button>
+<button onclick="changeHand('fa-hand-paper');">보</button>
+
+<!-- div>span>i -->
+<div>
+    <span>
+        <i></i>
+    </span>
+</div>
+<script>
+function changeHand(params) {
+    document.querySelector("i").className =params;
+    document.querySelector("i").className +=" fas";
+
+    // document.querySelector("i").classList.add("fas");
+}
+</script>
+</body>
+</html>
