@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="../icon/css/all.css">
+    <title>switch</title>
+    <style>
+
+    </style>
+</head>
+
+<body>
+    <!-- select#select1>option*3{item} -->
+    <select onchange="show();" name="fruit" id="select1">
+        <option value="apple">apple</option>
+        <option value="banana">banana</option>
+        <option value="melon">melon</option>
+    </select>
+
+    <script>
+        function show() {
+            // console.log("값이 변경되었습니다.");
+            let selectElem = document.querySelector("#select1");
+            // console.log(selectElem.value + "가 선택되었습니다.");
+
+            switch (selectElem.value) {
+                case "apple":
+                    console.log("사과는 빨개요");
+                    break;
+
+                case "banana":
+                    console.log("바나나는 원래 하얗다");
+                    break;
+
+                case "melon":
+                    console.log("멜론은 맛있어");
+                    break;
+                    
+                default:
+                    break;
+            }
+        }
+    </script>
+</body>
+
+</html>
