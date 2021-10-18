@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="../icon/css/all.css">
+    <title></title>
+    <style>
+        
+    </style>
+</head>
+<body>
+<input type="text" id="input1">
+<button onclick="change();">바꾸기</button>
+<h1>
+    Lorem.
+</h1>
+<h1>
+    Explicabo.
+</h1>
+<h1>
+    Itaque?
+</h1>
+<h1>
+    Iste.
+</h1>
+<h1>
+    Quidem?
+</h1>
+<script>
+let index = 0;
+
+function change() {
+    let val = document.querySelector("#input1").value;
+
+    document.querySelectorAll("h1")[index].innerHTML = val;
+
+    index ++;
+    index %= 5;
+}
+</script>
+</body>
+</html>
