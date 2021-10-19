@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="../icon/css/all.css">
+    <title>array</title>
+    <style>
+        
+    </style>
+</head>
+<body>
+
+<script>
+let arr1 = ["bts", "jimin", "v", "suga", "hope"];
+
+// 중간 아이템 삭제 splice()
+arr1.splice(2, 1); // (시작인덱스, 삭제할개수)
+
+console.log("길이", arr1.length);
+console.log(0, arr1[0]);
+console.log(1, arr1[1]);
+console.log(2, arr1[2]);
+console.log(3, arr1[3]);
+
+// 중간 아이템 추가 splice()
+arr1.splice(2, 0, "rm") // (시작인덱스, 삭제할개수, 추가할아이템...)
+console.log("길이", arr1.length);
+console.log(0, arr1[0]);
+console.log(1, arr1[1]);
+console.log(2, arr1[2]);
+console.log(3, arr1[3]);
+console.log(4, arr1[4]);
+
+// 중간 아이템 변경
+arr1[2] = "jk";
+
+console.log(2, arr1[2]);
+</script>
+</body>
+</html>
