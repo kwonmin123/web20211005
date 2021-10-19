@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="../icon/css/all.css">
+    <title></title>
+    <style>
+        
+    </style>
+</head>
+<body>
+<!-- span#icon>i.fas.fa-thumbs-up -->
+<span id="icon" onclick="countup();">
+    <i class="fas fa-thumbs-up"></i>
+</span>
+
+<!-- span#count -->
+<span id="count">0</span>
+<script>
+
+function countup() {
+    let val = Number(document.querySelector("#count").innerHTML);
+    val ++;
+
+    document.querySelector("#count").innerHTML = val;
+}
+
+</script>
+</body>
+</html>
