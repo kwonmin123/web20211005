@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="../icon/css/all.css">
+    <title>dom event</title>
+    <style>
+        
+    </style>
+</head>
+<body>
+<!-- span#icon1>i.fas.fa-thumbs-up -->
+<span id="icon1">
+    <i class="fas fa-thumbs-up"></i>
+</span>
+
+<!-- span#count{0} -->
+<span id="count">0</span>
+<script>
+let icon = document.querySelector("#icon1");
+let a =0;
+icon.onclick = function () {
+    a++;
+    document.querySelector("#count").innerHTML=a;
+    console.log("아이콘 클릭됨");
+};
+
+
+</script>
+</body>
+</html>
