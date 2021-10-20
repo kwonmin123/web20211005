@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="../icon/css/all.css">
+    <title>style</title>
+    <style>
+        
+    </style>
+</head>
+<body>
+<!-- button{숨기기}+h1>lorem3 -->
+<button id="off">숨기기</button>
+<button id="on">보여주기</button>
+<h1>
+    Lorem, ipsum dolor.
+</h1>
+<script>
+document.querySelector("#off").addEventListener("click", function () {
+    document.querySelector("h1").style.display = "none";
+})
+document.querySelector("#on").addEventListener("click", function () {
+    document.querySelector("h1").style.display = "block";
+})
+</script>
+</body>
+</html>
