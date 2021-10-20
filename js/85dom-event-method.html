@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="../icon/css/all.css">
+    <title>addEventListener</title>
+    <style>
+        
+    </style>
+</head>
+<body>
+<input type="text" id="input1">
+<script>
+// #input1 요소에 keyup 이벤트 발생시 value가 console 출력
+// addEventListner 메소드를 활용
+document.querySelector("#input1").addEventListener('keyup',function () {
+    console.log(document.querySelector("#input1").value);
+})
+document.querySelector("#input1").addEventListener('keyup',function () {
+    console.log("good");
+})
+</script>
+</body>
+</html>
