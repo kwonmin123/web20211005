@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="../icon/css/all.css">
+    <title>style</title>
+    <style>
+    .hide{
+        display: none;
+    }        
+    </style>
+</head>
+<body>
+<!-- button{숨기기}+h1>lorem3 -->
+<button>숨기기/보여주기</button>
+<h1>
+    Lorem, ipsum dolor.
+</h1>
+<script>
+    // 1번
+// document.querySelector("button").addEventListener("click",function () {
+//     if(document.querySelector("h1").style.display=="none"){
+//         document.querySelector("h1").style.display="block";
+//     } else document.querySelector("h1").style.display="none";
+// })
+    //2번
+    document.querySelector("button").addEventListener("click",function () {
+        document.querySelector("h1").classList.toggle("hide")
+    })
+</script>
+</body>
+</html>
