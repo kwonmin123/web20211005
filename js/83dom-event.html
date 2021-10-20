@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="../icon/css/all.css">
+    <title>dom event</title>
+    <style>
+        
+    </style>
+</head>
+<body>
+<!-- h1#head1>lorem1 -->
+<h1 id="head1">
+    Lorem.
+</h1>
+<script>
+/*
+document.querySelector("#head1").onclick = function () {
+    console.log("1번 업무");
+}
+
+document.querySelector("#head1").onclick = function () {
+    console.log("2번 업무");
+}
+*/
+
+document.querySelector("#head1").onclick = function () {
+    task1();
+    task2();
+}
+
+function task1() {
+    console.log("1번 업무");
+}
+
+function task2() {
+    console.log("2번 업무");
+}
+</script>
+</body>
+</html>
