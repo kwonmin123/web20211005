@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="../icon/css/all.css">
+    <title>dom event property</title>
+    <style>
+        
+    </style>
+</head>
+<body>
+<!-- input#input1+h1#head1 -->
+<input type="text" id="input1">
+<h1 id="head1"></h1>
+<!-- h1>span#count -->
+<h1>
+    <span id="count"></span> 글자 작성 중
+</h1>
+<script>
+    document.querySelector("#input1").onkeyup = function () {
+        console.log("keyup 이벤트 발생.");
+        
+        let inputElem = document.querySelector("#input1");
+        let headElem = document.querySelector("#head1");
+        
+        headElem.innerHTML = inputElem.value;
+        // document.querySelector("#count").innerHTML=document.querySelector("#head1").innerHTML.length;
+    }
+     document.querySelector("#input1").onkeyup = function () {
+         document.querySelector("#count").innerHTML=document.querySelector("#head1").innerHTML.length;
+     }
+
+
+</script>
+</body>
+</html>
