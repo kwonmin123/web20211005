@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="../icon/css/all.css">
+    <title>template literals</title>
+    <style>
+        
+    </style>
+</head>
+<body>
+<!-- ul#list1 -->
+<ul id="list1"></ul>
+<script>
+let arr = ["bts", "jimin", "v", "hope", "suga"];
+
+for (let i = 0; i < arr.length; i++) {
+    // document.querySelector("#list1").innerHTML += "<li>" + arr[i] + "</li>";
+    document.querySelector("#list1").innerHTML += `<li>${arr[i]}</li>`;
+}
+
+</script>
+</body>
+</html>
