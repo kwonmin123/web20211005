@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="../icon/css/all.css">
+    <title>template literal</title>
+    <style>
+        
+    </style>
+</head>
+<body>
+<!-- {name}+input#input1+{color}+input#input2+button{+} -->
+name
+<input type="text" id="input1">
+color
+<input type="text" id="input2">
+<button>+</button>
+
+<!-- ul#list1 -->
+<ul id="list1">
+    <li style="color: blue;">
+        Lorem.
+    </li>
+</ul>
+<script>
+
+document.querySelector("button").addEventListener("click",function () {
+    let val1=document.querySelector("#input1").value
+    let val2=document.querySelector("#input2").value    
+    let newone =document.createElement("li");
+    newone.innerHTML=val1;
+    newone.style.color=val2;
+    document.querySelector("#list1").appendChild(newone)
+})
+
+
+</script>
+</body>
+</html>
