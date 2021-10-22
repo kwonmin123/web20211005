@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="../icon/css/all.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <title>event click</title>
+    <style>
+        h1:first-child {
+            background: yellow;
+        }
+    </style>
+    <script>
+        $(document).ready(function() {
+            $("h1:first-child").click(function () {
+                console.log("h1 클릭됨");
+            });
+
+            /*
+            let heads = document.querySelectorAll("h1");
+
+            for (let i = 0; i < heads.length; i++) {
+                heads[i].addEventListener("click", function () {
+                    console.log("h1 클릭됨. vanilla js");
+                })
+            }
+            */
+        });
+    </script>
+</head>
+<body>
+    <!-- div*3>h1*3>lorem1 -->
+    <div>
+        <h1>
+            Lorem.
+        </h1>
+        <h1>
+            Maxime.
+        </h1>
+        <h1>
+            Corrupti!
+        </h1>
+    </div>
+    <div>
+        <h1>
+            Lorem.
+        </h1>
+        <h1>
+            Ab?
+        </h1>
+        <h1>
+            Repudiandae?
+        </h1>
+    </div>
+    <div>
+        <h1>
+            Lorem.
+        </h1>
+        <h1>
+            Iste.
+        </h1>
+        <h1>
+            Excepturi.
+        </h1>
+    </div>
+
+    <!-- h1*3>lorem1 -->
+    <h1>
+        Lorem.
+    </h1>
+    <h1>
+        Repudiandae?
+    </h1>
+    <h1>
+        Ex?
+    </h1>
+
+<script>
+
+</script>
+</body>
+</html>
