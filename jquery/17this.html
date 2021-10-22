@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="../icon/css/all.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <title>this</title>
+    <style>
+        
+    </style>
+    <script>
+        $(document).ready(function() {
+            $("input").keyup(function () {
+                // 코드 작성
+                let val = this.value;
+
+                document.querySelector("#result").innerHTML = val;
+            })
+        });
+    </script>
+</head>
+<body>
+    <!-- (input+br)*3+h1#result -->
+    <input type="text">
+    <br>
+    <input type="text">
+    <br>
+    <input type="text">
+    <br>
+    <h1 id="result"></h1>
+<script>
+
+</script>
+</body>
+</html>
