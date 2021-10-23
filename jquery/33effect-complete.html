@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="../icon/css/all.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <title>complete</title>
+    <style>
+        
+    </style>
+    <script>
+        $(document).ready(function() {
+            $("#btn1").click(function () {
+                $("#head1").toggle(3000);
+                console.log("또 다른일 계속 진행");
+            });
+
+            $("#btn2").click(function () {
+                $("#head2").toggle(3000, function() {
+                    console.log("또 다른일 계속 진행222222222");
+                }); 
+            })
+        });
+    </script>
+</head>
+<body>
+<!-- button#btn$*2{toggle}+h1#head$*2>lorem3 -->
+<button id="btn1">toggle</button>
+<button id="btn2">toggle</button>
+<h1 id="head1">
+    Lorem, ipsum dolor.
+</h1>
+<h1 id="head2">
+    Quam, nam nemo.
+</h1>
+<script>
+
+</script>
+</body>
+</html>
