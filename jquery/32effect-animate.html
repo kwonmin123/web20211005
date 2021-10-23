@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="../icon/css/all.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <title>effect animate</title>
+    <style>
+        h1 {
+            opacity: 0;
+            background-color: blue;
+            color: white;
+        }
+    </style>
+    <script>
+        $(document).ready(function() {
+            $("h1").hover(function () {
+                $(this).animate({opacity: 1});
+            }, function () {
+                $(this).animate({opacity: 0});
+            });
+        });
+    </script>
+</head>
+<body>
+<!-- h1*5>lorem1 -->
+<h1>
+    Lorem.
+</h1>
+<h1>
+    Est.
+</h1>
+<h1>
+    Earum.
+</h1>
+<h1>
+    Similique.
+</h1>
+<h1>
+    Modi!
+</h1>
+<script>
+
+</script>
+</body>
+</html>
