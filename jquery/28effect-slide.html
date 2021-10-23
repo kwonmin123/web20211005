@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="../icon/css/all.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <title></title>
+    <style>
+        
+    </style>
+    <script>
+        $(document).ready(function() {
+            $("#btn1").click(function () {
+                $("h1").slideUp();
+            });
+
+            $("#btn2").click(function () {
+                $("h1").slideDown();
+            });
+
+            $("#btn3").click(function () {
+                $("h1").slideToggle(1000);
+            });
+
+        });
+    </script>
+</head>
+<body>
+<!-- button#btn$*3+h1>lorem -->
+<button id="btn1">slideUp</button>
+<button id="btn2">slideDown</button>
+<button id="btn3">slideToggle</button>
+<h1>
+    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptatum unde possimus corrupti perferendis in neque incidunt magni maiores at provident quod magnam voluptates fugit nisi assumenda, eius blanditiis minus laborum.
+</h1>
+<script>
+
+</script>
+</body>
+</html>
