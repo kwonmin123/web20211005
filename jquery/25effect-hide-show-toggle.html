@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="../icon/css/all.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <title>effect speed</title>
+    <style>
+        
+    </style>
+    <script>
+        $(document).ready(function() {
+            $("#btn1").click(function () {
+                $("h1").hide(1000); // milliseconds
+            });
+            $("#btn2").click(function () {
+                $("h1").show("slow"); // ms
+            });
+            $("#btn3").click(function () {
+                $("h1").toggle("fast");
+            });
+        });
+    </script>
+</head>
+<body>
+<!-- button#btn1{hide}+button#btn2{show}+button#btn3{toggle} -->
+<button id="btn1">hide</button>
+<button id="btn2">show</button>
+<button id="btn3">toggle</button>
+
+<!-- h1*3>lorem1 -->
+<h1>
+    Lorem.
+</h1>
+<h1>
+    Autem.
+</h1>
+<h1>
+    Commodi.
+</h1>
+
+<script>
+
+</script>
+</body>
+</html>
