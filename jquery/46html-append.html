@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="../icon/css/all.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <title>append</title>
+    <style>
+        
+    </style>
+    <script>
+        $(document).ready(function() {
+            $("#btn1").click(function() {
+                let randomNumber = Math.random();
+                $("#container").append(`<div>${randomNumber}</div>`);
+            });
+            $("#btn2").click(function() {
+                let randomNumber = Math.random();
+                let newElem = $("<div />");
+                newElem.html(randomNumber);
+
+                $("#container2").append(newElem);
+            });
+        });
+    </script>
+</head>
+<body>
+<!-- button{+} -->
+<button id="btn1">+</button>
+<!-- #container -->
+<div id="container"></div>
+
+<hr>
+
+<!-- button#btn2{+}+#container2 -->
+<button id="btn2">+</button>
+<div id="container2"></div>
+<script>
+
+</script>
+</body>
+</html>
